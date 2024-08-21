@@ -40,7 +40,7 @@ const Listing = () => {
     <>
       <Header />
       <div className="max-w-screen-md  mx-auto mt-5">
-        {isLoading === true && <p>Loading...</p>}
+        {isLoading === true && <p className="text-center">Loading...</p>}
         <div className="flex flex-wrap justify-center items-baseline gap-20">
           {isLoading === false &&
             records.map((record: any) => (
